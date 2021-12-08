@@ -16,3 +16,180 @@
     --text-clr: #60C1B6;
     --button-clr: #ED7861;
 }
+
+body {
+    background-color: var(--bg-clr);
+    color: black;
+}
+
+.container {
+    width: 90vw;
+    margin: 15vh auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 8px black;
+}
+
+.output-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.output-tip-amount-box, .output-total-per-person-container {
+    display: flex;
+    width: 100%;
+    padding: 4vh 0 2vh 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.output-tip-amount-box {
+    border-bottom: 1px solid var(--border-clr);
+}
+
+.category {
+    margin-right: 2vh;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: .6rem;
+}
+
+.value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.input-amount-container {
+    background-color: var(--bottom-bg-clr);
+}
+
+.select-tip-rate-conatainer {
+    background-color: var(--secondary-bg-clr);
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh;
+    border-top: var(--border-clr);
+    border-bottom: var(--border-clr);
+}
+
+.tip-rate {
+    font-family: 'Roboto Mono', monospace;
+    padding: 1vh 3vh;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    color: var(--text-clr);
+    box-shadow: 1px 1px 5px rgba(87, 87, 87, 0.363);
+}
+
+.calculate-tip-amount-container {
+    display: flex;
+    padding: 3vh ;
+    justify-content: flex-end;
+}
+
+.calculate-tip-amount {
+    font-family: 'Roboto Mono', monospace;
+    padding: 1vh 5vh;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-clr);
+    color: white;
+}
+
+.input-values-here-conatiner {
+    display: flex;
+    padding: 3vh 1vh;
+    justify-content: space-between;
+}
+
+.input-bill-amount-container, .input-people-number-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-one , .section-two{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed var(--dashed-border-clr);
+}
+
+.section-two {
+    justify-content: flex-end;
+}
+
+.dollor, .people {
+    width: 25px;
+    height: 25px;
+    margin-right: 4vw;
+}
+
+input[type='text'] {
+    outline: none;
+    border: none;
+    background: none;
+    width: 20vw;
+    height: 5vh;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+.about {
+    font-family: 'Roboto Mono', monospace;
+    font-size: .6rem;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 40vw;
+        margin: 10vh auto;
+    }
+
+    input[type='text'] {
+        width: 7vw;
+        height: 6vh;
+        font-size: 2.2rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+    }
+
+    .output-tip-amount-box, .output-total-per-person-container {
+        padding: 5vh 0 4vh 0;
+    }
+
+    .value {
+        font-size: 2.7rem;
+    }
+
+    
+    .select-tip-rate-conatainer {
+    padding: 3vh;
+    }
+
+    .tip-rate {
+    padding: 1.5vh 4vh;
+    }
+
+    .calculate-tip-amount-container {
+        padding: 4vh;
+    }
+    
+    .calculate-tip-amount {
+        padding: 2vh 8vh;
+    }
+
+    .input-values-here-conatiner {
+        padding: 6vh 2vh;
+    }
+
+    .dollor, .people {
+        margin-right: 2vw;
+    }
+
+}
