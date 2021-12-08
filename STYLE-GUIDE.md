@@ -6,7 +6,7 @@
 # COLORS
 
 - background color: #F6F6F3
-- background color for the bottom part of the card: #F7F7F7
+- background color for the bottom part of the card: c
 - border separating tip amount: #DEDEDE
 - vertical border separating bill amount and the number of people: #DEDEDE
 - dashed border, for text input fields: #B3B3B3
