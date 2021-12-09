@@ -128,7 +128,7 @@ body {
     margin-right: 4vw;
 }
 
-input[type='text'] {
+input[type='number'] {
     outline: none;
     border: none;
     background: none;
@@ -142,6 +142,11 @@ input[type='text'] {
 .about {
     font-family: 'Roboto Mono', monospace;
     font-size: .6rem;
+}
+
+.selected {
+    background-color: var(--text-clr);
+    color: black;
 }
 
 
