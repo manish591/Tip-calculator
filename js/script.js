@@ -28,6 +28,10 @@ function computeTipAmount(event) {
         button.classList.remove('selected');
     })
     if(tipRate === undefined) return;
+
+    let output = tipAmountFormula(tipRate, billAmountValue, totalPersonValue);
+    tipAmountResult.innerText = `$${output.tip}`;
+    totalPerPersonResult.innerText = `$${output.amountPerPerson}`;
 }
 
 function selectTipRate(event) {
@@ -41,4 +45,11 @@ function selectTipRate(event) {
     }
     button.dataset.id = 'selected';
     button.classList.add('selected');
+}
+
+function tipAmountFormula(rate, bill, person) {
+    console.log(person, bill, rate)
+    let tip = Number(bill) * (Number(rate.replace('%', '')) / 100);
+    let amountPerPerson = (Number(bill) + tip) / Number(person);
+    return {tip, amountPerPerson};
 }
